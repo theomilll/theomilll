@@ -1,4 +1,4 @@
-# Hey there, I'm Theo Moura! 
+# Hey there, I'm Theo Moura! Welcome to my profile!
 
 🚧 This README is a work in progress 🚧
 
