@@ -1,11 +1,14 @@
-# Hey there, I'm Theo Moura. Welcome to my profile!
-
-🚧 This README is a work in progress 🚧
+<h1 align="center">
+    Hey there, I'm Theo Moura. Welcome to my profile!
+</h1>
+ <p align="center">
+  🚧 This README is a work in progress 🚧
+</p>
 
 <div align="center">
 
-  <img align="left" height="150em" src="https://github-readme-stats.vercel.app/api?username=theomilll&layout=compact&theme=transparent" />
-  <img align="left" height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=theomilll&layout=compact&theme=transparent" />
+  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=theomilll&theme=transparent&show_icons=true" />
+  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&theme=transparent" />
   
 </div>
 
