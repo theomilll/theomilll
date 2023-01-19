@@ -7,8 +7,8 @@
 
 <div align="center">
 
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=theomilll&theme=tokyonight&show_icons=true" />
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=theomilll&layout=compact&theme=tokyonight" />
+  <img height="150em" src="http://git-stats-working-final.vercel.app/api?username=theomilll&theme=tokyonight&show_icons=true" />
+  <img height="150em" src="http://git-stats-working-final.vercel.app/api/top-langs/?username=theomilll&layout=compact&theme=tokyonight" />
   
 </div>
 
