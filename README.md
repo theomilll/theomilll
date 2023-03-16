@@ -1,11 +1,11 @@
 <h1 align="center">
-    Hey there, I'm Theo Moura. Welcome to my profile!
+    Hey there, I'm Theo Moura. Welcome to my profile! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 </h1>
  <p align="center">
   🚧 This README is a work in progress 🚧
 </p>
 
-<div align="center">
+<div align="center" style="display: flex; justify-content: center;">
 
   <img height="150em" src="http://git-stats-definitive.vercel.app/api?username=theomilll&theme=tokyonight&show_icons=true" />
   <img height="150em" src="http://git-stats-definitive.vercel.app/api/top-langs/?username=theomilll&layout=compact&theme=tokyonight" />
@@ -28,3 +28,7 @@
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
  </div><br>
+
+<p align="center">
+    <a href="https://github.com/theomilll">
+        <img src="https://img.shields.io/github/followers/theomilll?label=Follow&style=social" alt="
