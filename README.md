@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img alt="Théo Moura, software engineer in Recife, Brazil. I build AI products and the tooling that makes coding agents better." src="assets/header-light.svg" width="100%">
+  <img alt="Théo Moura, software engineer. I like building stuff." src="assets/header-light.svg" width="100%">
 </picture>
 
 <picture>

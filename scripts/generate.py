@@ -122,9 +122,9 @@ def header(t, weeks):
     body = f"""<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0" stop-color="{t['accent']}" stop-opacity=".45"/><stop offset="1" stop-color="{t['accent']}" stop-opacity="0"/></linearGradient>
 <clipPath id="reveal"><rect x="{x0}" y="0" width="0" height="200"><animate attributeName="width" from="0" to="{x1 - x0 + 4}" dur="1.6s" fill="freeze" calcMode="spline" keySplines=".2 .7 .2 1" keyTimes="0;1"/></rect></clipPath></defs>
-<text class="mono fade" x="40" y="58" font-size="12" letter-spacing="1.6" fill="{t['muted']}">SOFTWARE ENGINEER · RECIFE, BRAZIL</text>
+<text class="mono fade" x="40" y="58" font-size="12" letter-spacing="1.6" fill="{t['muted']}">SOFTWARE ENGINEER</text>
 <text class="sans fade" x="38" y="112" font-size="50" font-weight="800" letter-spacing="-1.5" fill="{t['fg']}" style="animation-delay:.1s">Théo Moura</text>
-<text class="sans fade" x="40" y="148" font-size="16" fill="{t['muted']}" style="animation-delay:.25s">I build AI products and the tooling that makes coding agents better.<tspan class="caret" fill="{t['accent']}">▍</tspan></text>
+<text class="sans fade" x="40" y="148" font-size="16" fill="{t['muted']}" style="animation-delay:.25s">I like building stuff.<tspan class="caret" fill="{t['accent']}">▍</tspan></text>
 <g clip-path="url(#reveal)"><path d="{area}" fill="url(#g)"/><path d="M{pts[0][0]:.1f},{pts[0][1]:.1f} {curve}" fill="none" stroke="{t['accent']}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="{pts[-1][0]:.1f}" cy="{pts[-1][1]:.1f}" r="4" fill="{t['accent']}"/></g>
 <line x1="{x0}" y1="{base + 0.5}" x2="{x1}" y2="{base + 0.5}" stroke="{t['line']}"/>
