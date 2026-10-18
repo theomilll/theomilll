@@ -13,4 +13,4 @@
   <img alt="Languages I write, by code size" src="assets/languages-light.svg" width="100%">
 </picture>
 
-**Building now:** Habeas Botus · [pstack-codex](https://github.com/theomilll/pstack-codex) · skill-overflow &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/theo-moura-011662232/)
+[LinkedIn](https://www.linkedin.com/in/theo-moura-011662232/)
