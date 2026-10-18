@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="200" viewBox="0 0 840 200" role="img">
+<style>
+.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}
+.fade{animation:fade .6s ease-out both}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.caret{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="0.5" y="0.5" width="839" height="199" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#e2700f" stop-opacity=".45"/><stop offset="1" stop-color="#e2700f" stop-opacity="0"/></linearGradient>
+<clipPath id="reveal"><rect x="610" y="0" width="0" height="200"><animate attributeName="width" from="0" to="194" dur="1.6s" fill="freeze" calcMode="spline" keySplines=".2 .7 .2 1" keyTimes="0;1"/></rect></clipPath></defs>
+<text class="mono fade" x="40" y="58" font-size="12" letter-spacing="1.6" fill="#59636e">SOFTWARE ENGINEER · RECIFE, BRAZIL</text>
+<text class="sans fade" x="38" y="112" font-size="50" font-weight="800" letter-spacing="-1.5" fill="#1f2328" style="animation-delay:.1s">Théo Moura</text>
+<text class="sans fade" x="40" y="148" font-size="16" fill="#59636e" style="animation-delay:.25s">I build AI products and the tooling that makes coding agents better.<tspan class="caret" fill="#e2700f">▍</tspan></text>
+<g clip-path="url(#reveal)"><path d="M610,150 L610.0,148.8 C611.1,148.7 614.4,148.6 616.6,148.6 C618.7,148.6 620.9,149.1 623.1,148.8 C625.3,148.5 627.5,146.7 629.7,146.8 C631.8,146.9 634.0,149.1 636.2,149.5 C638.4,149.9 640.6,149.5 642.8,149.1 C644.9,148.8 647.1,147.5 649.3,147.3 C651.5,147.2 653.7,149.7 655.9,148.0 C658.0,146.4 660.2,140.5 662.4,137.2 C664.6,134.0 666.8,128.6 669.0,128.5 C671.1,128.5 673.3,133.7 675.5,136.9 C677.7,140.0 679.9,145.4 682.1,147.3 C684.3,149.2 686.4,149.3 688.6,148.2 C690.8,147.2 693.0,142.9 695.2,141.1 C697.4,139.4 699.5,140.6 701.7,137.6 C703.9,134.6 706.1,122.0 708.3,123.2 C710.5,124.5 712.6,141.2 714.8,145.2 C717.0,149.3 719.2,146.9 721.4,147.5 C723.6,148.2 725.7,149.2 727.9,149.1 C730.1,149.0 732.3,147.8 734.5,146.8 C736.7,145.8 738.9,147.6 741.0,143.3 C743.2,138.9 745.4,128.3 747.6,120.9 C749.8,113.6 752.0,106.9 754.1,99.3 C756.3,91.7 758.5,67.5 760.7,75.4 C762.9,83.2 765.1,136.8 767.2,146.5 C769.4,156.1 771.6,149.4 773.8,133.3 C776.0,117.3 778.2,57.9 780.3,50.0 C782.5,42.1 784.7,73.1 786.9,86.2 C789.1,99.2 791.3,117.8 793.4,128.4 C795.6,138.9 798.9,146.1 800.0,149.6 L800,150 Z" fill="url(#g)"/><path d="M610.0,148.8 C611.1,148.7 614.4,148.6 616.6,148.6 C618.7,148.6 620.9,149.1 623.1,148.8 C625.3,148.5 627.5,146.7 629.7,146.8 C631.8,146.9 634.0,149.1 636.2,149.5 C638.4,149.9 640.6,149.5 642.8,149.1 C644.9,148.8 647.1,147.5 649.3,147.3 C651.5,147.2 653.7,149.7 655.9,148.0 C658.0,146.4 660.2,140.5 662.4,137.2 C664.6,134.0 666.8,128.6 669.0,128.5 C671.1,128.5 673.3,133.7 675.5,136.9 C677.7,140.0 679.9,145.4 682.1,147.3 C684.3,149.2 686.4,149.3 688.6,148.2 C690.8,147.2 693.0,142.9 695.2,141.1 C697.4,139.4 699.5,140.6 701.7,137.6 C703.9,134.6 706.1,122.0 708.3,123.2 C710.5,124.5 712.6,141.2 714.8,145.2 C717.0,149.3 719.2,146.9 721.4,147.5 C723.6,148.2 725.7,149.2 727.9,149.1 C730.1,149.0 732.3,147.8 734.5,146.8 C736.7,145.8 738.9,147.6 741.0,143.3 C743.2,138.9 745.4,128.3 747.6,120.9 C749.8,113.6 752.0,106.9 754.1,99.3 C756.3,91.7 758.5,67.5 760.7,75.4 C762.9,83.2 765.1,136.8 767.2,146.5 C769.4,156.1 771.6,149.4 773.8,133.3 C776.0,117.3 778.2,57.9 780.3,50.0 C782.5,42.1 784.7,73.1 786.9,86.2 C789.1,99.2 791.3,117.8 793.4,128.4 C795.6,138.9 798.9,146.1 800.0,149.6" fill="none" stroke="#e2700f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="800.0" cy="149.6" r="4" fill="#e2700f"/></g>
+<line x1="610" y1="150.5" x2="800" y2="150.5" stroke="#d0d7de"/>
+<text class="mono" x="800" y="172" font-size="11" text-anchor="end" fill="#59636e">weekly activity, last 30 weeks</text>
+</svg>
