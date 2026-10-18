@@ -77,13 +77,12 @@ def contributions():
       weeks{contributionDays{date contributionCount}}}}}}"""
     cal = gh("api", "graphql", "-f", f"query={query}", "-f", f"u={USER}")["data"]["user"]["contributionsCollection"]["contributionCalendar"]
     prs = gh("search", "prs", "--author", USER, "--merged", "--limit", "1000", "--json", "repository")
-    outside = sum(1 for p in prs if not p["repository"]["nameWithOwner"].startswith(f"{USER}/"))
     days = [d for w in cal["weeks"] for d in w["contributionDays"]]
     best = run = 0
     for d in days:
         run = run + 1 if d["contributionCount"] else 0
         best = max(best, run)
-    return cal["weeks"], cal["totalContributions"], best, outside
+    return cal["weeks"], cal["totalContributions"], best, len(prs)
 
 
 def frame(t, height, body, extra_style=""):
@@ -137,7 +136,7 @@ def stat(x, value, label, t, delay):
 <text class="sans" x="{x}" y="100" font-size="13" fill="{t['muted']}">{label}</text></g>"""
 
 
-def calendar(t, weeks, total, streak, outside):
+def calendar(t, weeks, total, streak, merged):
     days = [d["contributionCount"] for w in weeks for d in w["contributionDays"] if d["contributionCount"]]
     cuts = sorted(days)
     q = [cuts[int(len(cuts) * f)] for f in (0.25, 0.5, 0.75)] if cuts else [1, 2, 3]
@@ -157,7 +156,7 @@ def calendar(t, weeks, total, streak, outside):
     body = f"""<text class="mono" x="49" y="40" font-size="12" letter-spacing="1.6" fill="{t['muted']}">CONTRIBUTIONS</text>
 {stat(49, f"{total:,}", "contributions in the last year", t, 0)}
 {stat(309, f"{streak} days", "longest streak", t, .1)}
-{stat(569, f"{outside}", "PRs merged into repos I don't own", t, .2)}
+{stat(569, f"{merged}", "PRs merged", t, .2)}
 {''.join(months)}{''.join(cells)}
 <text class="mono" x="{legend_x}" y="{ly}" font-size="10.5" fill="{t['muted']}">Less</text>{legend}
 <text class="mono" x="{legend_x + 34 + 5 * (cell + gap) + 4}" y="{ly}" font-size="10.5" fill="{t['muted']}">More</text>"""
@@ -190,13 +189,13 @@ def languages(t, shares, repo_count, theme):
 
 def main():
     OUT.mkdir(exist_ok=True)
-    weeks, total, streak, outside = contributions()
+    weeks, total, streak, merged = contributions()
     shares, repo_count = language_shares()
     for theme, t in THEMES.items():
         (OUT / f"header-{theme}.svg").write_text(header(t, weeks))
-        (OUT / f"contributions-{theme}.svg").write_text(calendar(t, weeks, total, streak, outside))
+        (OUT / f"contributions-{theme}.svg").write_text(calendar(t, weeks, total, streak, merged))
         (OUT / f"languages-{theme}.svg").write_text(languages(t, shares, repo_count, theme))
-    print(json.dumps({"total": total, "streak": streak, "outside_prs": outside, "repos": repo_count, "languages": [(l, round(s * 100, 1)) for l, s in shares]}))
+    print(json.dumps({"total": total, "streak": streak, "merged_prs": merged, "repos": repo_count, "languages": [(l, round(s * 100, 1)) for l, s in shares]}))
 
 
 if __name__ == "__main__":
